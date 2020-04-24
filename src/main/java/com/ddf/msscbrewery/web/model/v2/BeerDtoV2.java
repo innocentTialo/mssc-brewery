@@ -1,4 +1,4 @@
-package com.ddf.msscbrewery.web.model;
+package com.ddf.msscbrewery.web.model.v2;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -8,15 +8,15 @@ import lombok.NoArgsConstructor;
 import java.util.UUID;
 
 /**
- * Created by InnocentTIALO on 4/18/2020.
+ * Created by InnocentTIALO on 4/23/2020.
  */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class BeerDto {
+public class BeerDtoV2 {
     private UUID id;
     private String beerName;
-    private String beerStyle;
+    private BeerStyleEnum beerStyle;
     private long upc;
 }
